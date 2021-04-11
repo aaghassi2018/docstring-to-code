@@ -1,0 +1,22 @@
+Explanation of "Extension" for our C4 Project:
+
+We did: Option #2: Static board evaluation in AI 
+
+For our static board evaluation, we considered three primary factors:
+1) the priority the player in question had in the middle 3 columns over the other player
+2) the number of 2-in-a-row runs versus the opponents number of 2-in-a-row runs.
+3) the same for the unblocked 3-in-a-row runs
+
+After computing each of these factors, we weighted them, coming to one score for the board.
+
+
+
+To play, in the command prompt, run the following:
+
+In [1]: px = Player('X', 'RANDOM', 3)
+In [2]: b = Board(7, 6)
+In [3]: b.playGame(px, 'human')
+
+Then, either choose to play without the Static board evaluation (Option 0), or with the Static board evaluation (Option 1)
+
+Have fun!!
